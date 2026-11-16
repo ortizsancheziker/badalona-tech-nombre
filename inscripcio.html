@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscripció - Badalona Tech 2027</title>
+    <link rel="stylesheet" href="css/estils.css">
+</head>
+<body>
+
+<header>
+    <div class="logo">
+        <h1> Badalona Tech 2027</h1>
+        <p>Fira de tecnologia, informació i innovació</p>
+    </div>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Inici</a></li>
+            <li><a href="activitats.html">Activitats</a></li>
+            <li><a href="horaris.html">Horaris</a></li>
+            <li><a href="inscripcio.html" class="actiu">Inscripció</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main class="pagina-inscripcio">
+
+    <h2>Inscripció a la fira</h2>
+
+    <p>Omple el formulari següent per inscriure't a la Badalona Tech 2027.</p>
+
+    <form action="#" method="post">
+
+        <fieldset>
+            <legend>Dades personals</legend>
+
+            <div class="formulari-columnes">
+
+                <div class="camp">
+                    <label for="nom">Nom complet <span>*</span></label>
+                    <input type="text" id="nom" name="nom"
+                           placeholder="Nom i cognoms" required>
+                </div>
+
+                <div class="camp">
+                    <label for="correu">Correu electrònic <span>*</span></label>
+                    <input type="email" id="correu" name="correu"
+                           placeholder="nom@exemple.cat" required>
+                </div>
+
+                <div class="camp">
+                    <label for="telefon">Telèfon</label>
+                    <input type="tel" id="telefon" name="telefon"
+                           placeholder="600 000 000">
+                </div>
+
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Activitat i preferències</legend>
+
+            <div class="formulari-columnes">
+
+                <div class="camp">
+                    <label for="activitat">Activitat <span>*</span></label>
+
+                    <select id="activitat" name="activitat" required>
+                        <option value="">-- Selecciona una activitat --</option>
+                        <option value="robotica">Taller de robòtica</option>
+                        <option value="ciberseguretat">Introducció a la ciberseguretat</option>
+                        <option value="web">Crea la teva primera web</option>
+                    </select>
+                </div>
+
+                <div class="camp">
+                    <label>Dia d'assistència <span>*</span></label>
+
+                    <div class="radio">
+                        <input type="radio" id="dissabte"
+                               name="dia" value="dissabte" required>
+                        <label for="dissabte">Dissabte</label>
+
+                        <input type="radio" id="diumenge"
+                               name="dia" value="diumenge">
+                        <label for="diumenge">Diumenge</label>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="camp">
+                <label for="observacions">Observacions</label>
+                <textarea id="observacions" name="observacions"
+                          placeholder="Escriu aquí les teves observacions..."></textarea>
+            </div>
+
+            <div class="checkbox">
+                <input type="checkbox" id="informacio" name="informacio">
+                <label for="informacio">
+                    Rebre informació sobre futures activitats.
+                </label>
+            </div>
+
+            <div class="checkbox">
+                <input type="checkbox" id="condicions"
+                       name="condicions" required>
+                <label for="condicions">
+                    Acceptar les condicions de participació. <span>*</span>
+                </label>
+            </div>
+
+        </fieldset>
+
+        <div class="botons">
+            <button type="submit">Enviar inscripció</button>
+            <button type="reset" class="netejar">Netejar</button>
+        </div>
+
+    </form>
+
+</main>
+
+<footer>
+    <p>
+        Badalona Tech 2027 |
+        <a href="mailto:info@badalonatech.cat">info@badalonatech.cat</a>
+    </p>
+</footer>
+
+</body>
+</html>

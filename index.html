@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+<meta charset="UTF-8">
+<title>Badalona Tech 2027</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+header {
+    width: 100%;
+    height: 76px;
+    background: linear-gradient(100deg, #6db1f0, #00336c);
+    display: flex;
+    align-items: center;
+    padding: 0 35px;
+    color: white;
+}
+
+/* LOGO ROBOT */
+.logo {
+    width: 65px;
+    height: 60px;
+    margin-right: 14px;
+}
+
+.logo svg {
+    width: 65px;
+    height: 60px;
+}
+
+/* LINEA VERTICAL */
+.linea {
+    height: 48px;
+    width: 1px;
+    background: white;
+    margin-right: 19px;
+}
+
+/* TITULO */
+.texto {
+    flex: 1;
+}
+
+.texto h1 {
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 3px;
+}
+
+.texto p {
+    font-size: 14px;
+}
+
+/* MENU */
+nav {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+    padding: 8px 14px;
+    border-radius: 6px;
+}
+
+nav a.inici {
+    background: rgb(75, 152, 240);
+}
+
+nav a:hover {
+    background: #5da9e4;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    
+    <div class="logo">
+        <svg viewBox="0 0 70 65">
+            <g fill="none" stroke="white" stroke-width="4">
+                <rect x="10" y="15" width="50" height="43" rx="13"/>
+                <path d="M35 15 V8"/>
+                <circle cx="35" cy="5" r="3" fill="white"/>
+                <circle cx="25" cy="34" r="4" fill="white"/>
+                <circle cx="45" cy="34" r="4" fill="white"/>
+                <path d="M25 46 Q35 53 45 46"/>
+                <path d="M10 27 H5 V45 H10"/>
+                <path d="M60 27 H65 V45 H60"/>
+            </g>
+        </svg>
+    </div>
+
+    <div class="linea"></div>
+
+    <div class="texto">
+        <h1>Badalona Tech 2027</h1>
+        <p>Fira de tecnologia, informació i innovació</p>
+    </div>
+
+    <nav>
+        <a href="#" class="inici">Inici</a>
+        <a href="#">Activitats</a>
+        <a href="#">Horaris</a>
+        <a href="#">Inscripció</a>
+    </nav>
+    
+</header>
+
+</body>
+</html>
